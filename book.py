@@ -1,4 +1,5 @@
 from functools import total_ordering
+import pandas as pd
 
 @total_ordering
 class Order:
@@ -102,4 +103,13 @@ class Book:
 
 
 
+def data(self):
+    datasell = {'QUANTITY': [1, 120, 10], 'PRICE': [10, 12, 10]}
+    databuy = {'QUANTITY': [2, 10, 5], 'PRICE': [11, 10, 10]}
+
+    df1 = pd.DataFrame(datasell, comlums = ['QUANTITY', 'PRICE'])
+    df2 = pd.DataFrame(databuy, comlums = ['QUANTITY', 'PRICE'])
+    print("SELL ORDERS :",  '\n', df1)
+    print("BUY ORDERS :",  '\n', df2)
+    
 
