@@ -5,7 +5,7 @@ class Order:
     def __init__(self, quantity, price, priority, identity, buy = True):
         self.quantity = quantity
         self.price = price
-        self.priority = prioriy
+        self.priority = priority
         self.identity = identity
 
     def is_sell(self):
